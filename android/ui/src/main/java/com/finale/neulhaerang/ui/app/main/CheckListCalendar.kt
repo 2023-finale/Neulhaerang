@@ -23,6 +23,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.CalendarMonth
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberDatePickerState
@@ -160,7 +161,9 @@ fun DayElement(
 
         modifier = modifier
             .clip(RoundedCornerShape(8.dp))
-            .background(if (isSelected) Color.Gray else Color.Transparent)
+            .background(
+                if (isSelected) MaterialTheme.colorScheme.primaryContainer else Color.Transparent
+            )
             .padding(horizontal = 4.dp),
     ) {
         Text(
@@ -172,7 +175,8 @@ fun DayElement(
                 )
             ), style = if (isSelected) Typography.bodyMedium.merge(
                 TextStyle(
-                    Color(0xFFFFFFFF), fontWeight = FontWeight.Bold
+                    MaterialTheme.colorScheme.onPrimary,
+                    fontWeight = FontWeight.Bold
                 )
             ) else Typography.bodyMedium
         )
@@ -184,7 +188,9 @@ fun DayElement(
                 .background(
                     Brush.horizontalGradient(
                         listOf(
-                            Color(0xFF0F9D58), Color(0xF055CA4D)
+//                            Color(0xFF0F9D58), Color(0xF055CA4D)
+                            MaterialTheme.colorScheme.tertiaryContainer,
+                            MaterialTheme.colorScheme.tertiaryContainer,
                         )
                     )
                 )
@@ -210,7 +216,8 @@ fun DayElement(
         Text(
             text = day.toString(), style = if (isSelected) Typography.bodyMedium.merge(
                 TextStyle(
-                    Color(0xFFFFFFFF), fontWeight = FontWeight.Bold
+                    MaterialTheme.colorScheme.onPrimary,
+                    fontWeight = FontWeight.Bold
                 )
             ) else Typography.bodyMedium
         )

@@ -17,7 +17,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.OutlinedIconButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
@@ -49,7 +48,7 @@ fun CheckListContentInput(
     var showDialog by remember { mutableStateOf(false) }
 
     Row(verticalAlignment = Alignment.CenterVertically) {
-        OutlinedIconButton(onClick = { showDialog = true }) {
+        IconButton(onClick = { showDialog = true }) {
             when (stat) {
                 Stat.GodSang -> Text(text = stat.emoji)
                 Stat.Survive -> Text(text = stat.emoji)
