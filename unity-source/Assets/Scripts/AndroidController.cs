@@ -23,7 +23,7 @@ public class AndroidController : MonoBehaviour
     public List<GameObject> minihatList;
     public List<GameObject> scarfList;
     public Button titleObject;
-    //public List<GameObject> skinList;
+    public Material[] skinList;
     public List<GameObject> handList;
 
     // Clothes Button Image List
@@ -31,8 +31,8 @@ public class AndroidController : MonoBehaviour
     public List<Sprite> glassesOn;
     public List<Sprite> minihatOn;
     public List<Sprite> scarfOn;
-    //public List<Sprite> titleSprites;
-    //public List<Sprite> skinOn;
+    public List<Sprite> titleOn;
+    public List<Sprite> skinOn;
     public List<Sprite> handOn;
 
     public List<Button> bagButtons;
@@ -40,11 +40,14 @@ public class AndroidController : MonoBehaviour
     public List<Button> minihatButtons;
     public List<Button> scarfButtons;
     public List<Button> titleButtons;
-    //public List<Button> skinButtons;
+    public List<Button> skinButtons;
     public List<Button> handButtons;
-
+    
     // 스텟의 레벨을 표시하는 텍스트
     public List<TextMeshProUGUI> statLevelList;
+
+    // 캐릭터 GameObject
+    public GameObject character;
 
     void Awake()
     {
@@ -72,7 +75,7 @@ public class AndroidController : MonoBehaviour
         RequestMemberStats();
         RequestMemberStatus();
         RequestCharacterItems();
-        //RequestUserTitles();
+        RequestUserTitles();
         RequestGetUserProfile();
     }
 
@@ -199,52 +202,74 @@ public class AndroidController : MonoBehaviour
          */
 
         // 아이템을 장착했다면 Active
+        ClothesInit();
 
         if (datas.Backpack != 0)
         {
-            bagList[datas.Backpack].SetActive(true);
-            bagButtons[datas.Backpack].GetComponent<Image>().sprite = bagOn[datas.Backpack];
+            int index = datas.Backpack - 1;
+            bagList[index].SetActive(true);
+            bagButtons[index].GetComponent<Image>().sprite = bagOn[index];
         }
 
         if (datas.Glasses != 0)
         {
-            glassesList[datas.Glasses].SetActive(true);
-            glassesButtons[datas.Glasses].GetComponent<Image>().sprite = glassesOn[datas.Glasses];
+            int index = datas.Glasses - 1;
+            glassesList[index].SetActive(true);
+            glassesButtons[index].GetComponent<Image>().sprite = glassesOn[index];
         }
 
         if (datas.Hat != 0)
         {
-            minihatList[datas.Hat].SetActive(true);
-            minihatButtons[datas.Hat].GetComponent<Image>().sprite = minihatOn[datas.Hat];
+            int index = datas.Hat - 1;
+            minihatList[index].SetActive(true);
+            minihatButtons[index].GetComponent<Image>().sprite = minihatOn[index];
         }
 
         if (datas.Scarf != 0)
         {
-            scarfList[datas.Scarf].SetActive(true);
-            scarfButtons[datas.Scarf].GetComponent<Image>().sprite = scarfOn[datas.Scarf];
+            int index = datas.Scarf - 1;
+            scarfList[index].SetActive(true);
+            scarfButtons[index].GetComponent<Image>().sprite = scarfOn[index];
         }
 
         if (datas.Title != 0)
         {
             // transparent
+            int index = datas.Title - 1;
             Image buttonImage = titleObject.GetComponent<Image>();
             Color newColor = buttonImage.color;
             newColor.a = 1.0f;
             buttonImage.color = newColor;
             Debug.Log("color : " + newColor);
-            //titleObject.GetComponent<Image>().sprite = titleSprites[datas.Title];
+            titleObject.GetComponent<Image>().sprite = titleOn[index];
         }
 
-        //if (datas.Skin != 0)
-        //{
-        //    scarfList[datas.Skin].SetActive(true);
-        //    scarfButtons[datas.Skin].GetComponent<Image>().sprite = scarfOn[datas.Skin];
-        //}
+        /*
+         *  skin의 경우 없는 경우가 없으므로 0번도 바로 처리
+         */
+        
+        if (character != null)
+        {
+            // "Cat" GameObject에서 SkinnedMeshRenderer 컴포넌트를 찾음
+            SkinnedMeshRenderer skinnedMeshRenderer = character.GetComponent<SkinnedMeshRenderer>();
+
+            if (skinnedMeshRenderer != null && skinList != null && skinList.Length > 0)
+            {
+                Material newMaterialInstance = new Material(skinList[datas.Skin]);
+                // Materials 배열을 새로운 배열로 교체
+                //skinnedMeshRenderer.materials[0] = skinMaterials[id];
+                skinnedMeshRenderer.materials[0].CopyPropertiesFromMaterial(newMaterialInstance);
+            }
+        }
+        skinButtons[datas.Skin].GetComponent<Image>().sprite = skinOn[datas.Skin];
+        
 
         if (datas.Hand != 0)
         {
-            handList[datas.Hand].SetActive(true);
-            handButtons[datas.Hand].GetComponent<Image>().sprite = handOn[datas.Hand];
+            Debug.Log("junyeong change hand");
+            int index = datas.Hand - 1;
+            handList[index].SetActive(true);
+            handButtons[index].GetComponent<Image>().sprite = handOn[index];
         }
 
         // 아이템 전역 저장
@@ -256,6 +281,34 @@ public class AndroidController : MonoBehaviour
         PlayerPrefs.SetInt("Skin", datas.Skin);
         PlayerPrefs.SetInt("Hand", datas.Hand);
         PlayerPrefs.Save();
+    }
+
+    void ClothesInit()
+    {
+        foreach (var bag in bagList)
+        {
+            bag.SetActive(false);
+        }
+
+        foreach (var glasses in glassesList)
+        {
+            glasses.SetActive(false);
+        }
+
+        foreach (var minihat in minihatList)
+        {
+            minihat.SetActive(false);
+        }
+
+        foreach (var scarf in scarfList)
+        {
+            scarf.SetActive(false);
+        }
+
+        foreach (var hand in handList)
+        {
+            hand.SetActive(false);
+        }
     }
 
     /**
@@ -284,13 +337,11 @@ public class AndroidController : MonoBehaviour
         MemberTitles datas = JsonUtility.FromJson<MemberTitles>(jsonMessage);
         Debug.Log("heejeong 착장한 사용자 아이템 ::" + datas.ToString());
 
-        foreach (MemberTitle lt in datas.titles)
+        for (var i = 0; i < datas.titles.Length; i++)
         {
-            Debug.Log("heejeong 유저 보유 칭호 목록::" + lt.TitleId);
-            Debug.Log("heejeong 유저 보유 칭호 목록::" + lt.Content);
+            // 활성화
+            titleButtons[(int)datas.titles[i].TitleId - 1].GetComponent<Image>().sprite = titleOn[(int)datas.titles[i].TitleId - 1];            
         }
-
-        /*TODO*/
     }
 
     /**

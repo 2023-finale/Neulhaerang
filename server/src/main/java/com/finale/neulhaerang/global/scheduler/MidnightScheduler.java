@@ -68,7 +68,6 @@ public class MidnightScheduler {
 	}
 
 	@Async
-	@Transactional(readOnly = true)
 	@Scheduled(cron = "${schedules.cron.daily-routine}", zone = "Asia/Seoul")
 	public void createLetterTrigger() {
 		log.info("---------- 자정 스케줄러 : 편지를 전송합니다 ----------");
@@ -172,7 +171,6 @@ public class MidnightScheduler {
 		}
 	}
 
-	@Transactional
 	public void createLetter(Member member, LocalDate date) {
 		log.info("-----------  편지를 " + member.getNickname() + "님께 전송합니다 --------");
 		String CONTENT_TYPE = "application/x-www-form-urlencoded; charset=UTF-8";
@@ -191,7 +189,6 @@ public class MidnightScheduler {
 			publisher.publishEvent(new LetterEvent(member));
 		} catch (Exception e) {
 			log.error("-----------  편지를 " + member.getNickname() + "님께 전송할 때 에러가 발생했습니다 --------");
-			entityManager.clear();
 		}
 
 	}

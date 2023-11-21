@@ -15,7 +15,7 @@
 🎧모두 늘해랑과 함께하세요🌞
 </p>
 <p>
-<a href="https://play.google.com/store/apps/details?id=com.finale.neulhaerang"> <img src="https://img.shields.io/badge/Notion%20 보러가기-000000?style=flat-square&logo=notion&logoColor=white" /></a>
+<a href="https://young-bonsai-e9c.notion.site/PROJECT-6b388df2f1644339b618e088ba317554?pvs=4"> <img src="https://img.shields.io/badge/Notion%20 보러가기-000000?style=flat-square&logo=notion&logoColor=white" /></a>
 <a href="https://play.google.com/store/apps/details?id=com.finale.neulhaerang"><img src="https://img.shields.io/badge/다운로드%20하러가기-3DDC84?style=flat-square&logo=android&logoColor=white" /></a>
 </p>
 
@@ -39,7 +39,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">로그인 페이지</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/8aa4f2dc-1f06-42cf-a98a-b7de0cf6ba2f" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/53f513d4-4f15-4e17-9641-eacdd6fb54f5" /></td>
     </tr>
     <tr>
       <td align="center">카카오 소셜 로그인 후 자동으로 메인 화면으로 접속합니다.<br>
@@ -51,7 +51,7 @@
     </tr>
     <tr>
       <td align="center">
-	  	<img src="https://github.com/2023-finale/.github/assets/101235186/6306b3be-2979-4806-a9d2-f293b051f4bb" />
+	  	<img src="https://github.com/2023-finale/.github/assets/101235186/ea1203c2-c93f-4e3f-8326-b430c68cfc15" />
 	  </td>
     </tr>
     <tr>
@@ -63,7 +63,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">TODO/루틴 활용 제약 조건</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/c89610a6-c7df-4f6f-a0e2-b121e894bb51" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/bff222eb-6db8-4fbc-b78b-7245aff0d3cb" /></td>
     </tr>
     <tr>
       <td align="center">
@@ -77,7 +77,7 @@
     </tr>
     <tr>
       	<td align="center">
-	  		<img src="https://github.com/2023-finale/.github/assets/101235186/3c6d67a1-47af-445c-aca0-448048979d4f" />
+	  		<img src="https://github.com/2023-finale/.github/assets/101235186/31c26d2f-c9f0-4d7d-a786-d29d5b592eec" />
 		</td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">TODO 수정 페이지</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/ae9963bc-8fbf-4ab4-9dd1-af303598fdb1" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/f22fe2db-3ae9-42c6-8923-39c269d5b1f5" /></td>
     </tr>
     <tr>
       <td align="center">목록에서 롱프레스를 하여 접근할 수 있습니다<br>TODO의 알림 여부, 날짜, 시간, 스탯 정보를 수정할 수 있습니다.</td>
@@ -98,7 +98,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">루틴 수정페이지</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/44efba5b-4187-4fde-8122-b9198c9379a7" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/9d3c8f5f-4799-4301-b517-8a43bbad9f8d" /></td>
     </tr>
         <tr>
       <td align="center">목록에서 롱프레스를 하여 접근할 수 있습니다<br>루틴의 반복 날짜와 알람 여부, 알람 시간을 수정할 수 있습니다.</td>
@@ -107,7 +107,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">루틴 삭제</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/04164570-af42-4026-98b3-fb0ca91c57cf" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/ab566d6c-f123-44d0-b6ae-3220859dab24" /></td>
     </tr>
       <td align="center">사용자는 루틴을 제거할 수 있습니다.<br>이때 앞으로의 루틴도 제거가 가능합니다.</td>
     </tr>
@@ -115,7 +115,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">우편함</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/633854ff-823b-4c95-acf9-3960217a8d21" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/fddcc814-8a07-45dd-9aee-89ee18ce10fa" /></td>
     </tr>
     <tr>
       <td align="center">생성형 AI인 챗 GPT를 통해 사용자가 전날 완료한 TODO/루틴을 토대로 편지를 작성해줍니다.</td>
@@ -124,7 +124,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">마이페이지(스탯)</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/765b5e15-fa91-4418-b665-bf7233dba943" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/765b5e15-fa91-4418-b665-bf7233dba943" width="30%"/></td>
     </tr>
     <tr>
       <td align="center">그래프를 통해 사용자의 현재 스탯 정보를 알 수 있습니다.
@@ -138,16 +138,16 @@
       <td align="center" style="font-weight: bold; font-size: 18;">마이페이지(의상실)</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/66be742c-7808-409e-bb7c-b6d4d8acb0b7" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/d4e1ebd3-3cda-4f4f-915b-f50e75211b44" /></td>
     </tr>
     <tr>
-      <td align="center">사용자는 목도리, 모자, 안경, 가방을 통해 캐릭터를 커스터마이징 할 수 있습니다.</td>
+      <td align="center">사용자는 목도리, 모자, 안경, 가방, 스킨, 무기를 통해 캐릭터를 커스터마이징 할 수 있습니다.</td>
     </tr>
     <tr>
       <td align="center" style="font-weight: bold; font-size: 18;">마이페이지(칭호)</td>
     </tr>
     <tr>
-      <td align="center"><img src="" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/5a34526e-7d31-4795-aa46-284bf2d5ec4b" /></td>
     </tr>
     <tr>
       <td align="center">사용자는 얻은 칭호 중 하나를 선택해 캐릭터에 장착할 수 있습니다.<br>
@@ -157,7 +157,10 @@
       <td align="center" style="font-weight: bold; font-size: 18;">나태괴물 처치</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/89fed59c-2c41-4b97-92b8-b9a865456db6" /><img src="https://github.com/2023-finale/.github/assets/101235186/d5861b5a-217e-471d-9394-04be18e3c3ec" /></td>
+      <td align="center">
+        <img src="https://github.com/2023-finale/.github/assets/101235186/89fed59c-2c41-4b97-92b8-b9a865456db6" width="30%"/>
+        <img src="https://github.com/2023-finale/.github/assets/101235186/d5861b5a-217e-471d-9394-04be18e3c3ec" width="30%" />
+      </td>
     </tr>
     <tr>
       <td align="center">마이페이지에서 캐릭터 왼쪽의 나태괴물을 클릭하여 진입할 수 있습니다<br>
@@ -172,8 +175,8 @@
     </tr>
     <tr>
       <td align="center">
-        <img src="https://github.com/2023-finale/.github/assets/101235186/7cb6121a-8db3-4fde-8c7a-3e70ec3d9673" />
-        <img src="https://github.com/2023-finale/.github/assets/101235186/8a340ae3-bb29-4c45-89b0-7869317c049a" />
+        <img src="https://github.com/2023-finale/.github/assets/101235186/7cb6121a-8db3-4fde-8c7a-3e70ec3d9673" width="30%"/>
+        <img src="https://github.com/2023-finale/.github/assets/101235186/8a340ae3-bb29-4c45-89b0-7869317c049a" width="30%"/>
       </td>
     </tr>
     <tr>
@@ -186,7 +189,7 @@
       <td align="center" style="font-weight: bold; font-size: 18;">알림</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/af6cdda1-1245-43f7-b021-9dcb6ce84812" /></td>
+      <td align="center"><img src="https://github.com/2023-finale/.github/assets/101235186/2fea9fc3-4725-45e3-a64a-191e460cc953" /></td>
     </tr>
     <tr>
       <td align="center">사용자의 활동에 따라 알림을 보냅니다.</td>
