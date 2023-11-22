@@ -295,13 +295,13 @@
 
 ## 📂 기획 및 설계 산출물
 
-[**💭 요구사항 정의 및 기능 명세**](https://github.com/2023-finale/Neulhaerang/blob/master/exec/기능명세서.pdf)
+[**💭 요구사항 정의 및 기능 명세**](exec/기능명세서.pdf)
 
 [**🎨 화면 설계서**](https://www.figma.com/file/WMeAanpQhVT7a05kSzpagk/A502?type=design&node-id=485-165&mode=design&t=J3HZlBmWB3l69f7y-0)
 
 <img src="https://github.com/2023-finale/.github/assets/101235186/803ea51b-acf8-4a8b-a308-e63267e4e954" width="80%">
 
-[**🐾 API 명세서**](https://github.com/2023-finale/Neulhaerang/blob/master/exec/API%20%EB%AA%85%EC%84%B8%EC%84%9C.pdf)
+[**🐾 API 명세서**](exec/API%20%EB%AA%85%EC%84%B8%EC%84%9C.pdf)
 
 **✨ ER Diagram**
 
